@@ -1,29 +1,13 @@
-public class MainTest {
+package Stacks;
 
-    public static void main(String args[]){
-        List<Integer>list=new LinkedList<>();
-        list.insert(10);
-        list.insert(20);
-        list.insert(5);
-        list.insert(8);
+public class MainTest{
 
-        System.out.println("Printing size"+list.getSize());
-      //  System.out.println(list.getSize());
-
-        System.out.println("Printing list....................");
-        list.printList();
-
-        list.remove(5);
-
-        System.out.println("Printing list..................");
-        list.printList();
-
-        list.remove(20);
-
-        System.out.println("Printing list..................");
-        list.printList();
-
-        System.out.println("Printing size"+list.getSize());
-      //  System.out.println(list.getSize());
+    public static void main(String args[]) {
+        StackUsingArray<Integer> st = new StackUsingArray<>();
+        st.push(10);
+        st.push(20);
+        st.push(30);
+        System.out.println(st.pop());
     }
+
 }
